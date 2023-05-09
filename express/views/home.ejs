@@ -1,0 +1,16 @@
+<%- include('header') %>
+<body>
+    <h1>My Profile Detail :</h1>
+    <h3>Name :      <%=     user.name %> </h3>
+    <h3>Profile:    <%=     user.desination %></h3>
+    <h3>City:       <%=     user.city %></h3>
+    <h3>Skills :</h3>
+        <ul>
+            <% user.skills.forEach((skill)=>{ %>
+                <li><%= skill %> </li>
+            <% }) %>
+        </ul>
+   
+
+</body>
+</html>
