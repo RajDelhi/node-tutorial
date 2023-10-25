@@ -1,7 +1,0 @@
-const http = require('node:http');
-
-http.createServer((req,res)=>{
-    console.log("I an in local server");
-    res.write("This is a test server");
-    res.end();
-}).listen(8080);

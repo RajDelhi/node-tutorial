@@ -1,20 +1,13 @@
-const httpServer = require('http');
+const http  = require("http");
 
-//******** Function 
-function printName(req, res) {
-    res.write("<b>HI, This is Raj Yadav..</b>");
-    res.end();
-}
-//******* Arrow function ********************
-
-const MyName = (req,res)=>{
-    res.write("<b>This is arrow function example</b>");
+const value = (req,res)=>{
+    
+    res.write("This is first http server and testing code.");
     res.end();
 }
 
+http.createServer(value).listen(4000);
 
-httpServer.createServer(MyName).listen(4000); // this is port so call url localhost:4000 for output
 
-httpServer.createServer(printName).listen(4500);
 
 
